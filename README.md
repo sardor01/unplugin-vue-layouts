@@ -1,10 +1,10 @@
 # unplugin-vue-layouts
 
-## usage 🦖
+## Usage
 
-### basic
+### Basic
 
-#### install
+#### Install
 
 ```shell
 pnpm add -D unplugin-vue-layouts
@@ -21,7 +21,7 @@ export default defineConfig({
 });
 ```
 
-#### usage
+#### Usage
 
 ```ts
 import { createRouter, createWebHistory } from 'vue-router';
@@ -71,21 +71,19 @@ const about = {
 const routes = setupLayouts([home, about]);
 ```
 
-<br />
-
 ### Pair with file routing
 
 Of course, file routing is also supported 🤗
 
 #### [unplugin-vue-router](https://github.com/posva/unplugin-vue-router)
 
-##### install
+##### Install
 
 ```shell
 npm i unplugin-vue-router -D
 ```
 
-##### usage
+##### Usage
 
 ```ts
 import { createRouter, createWebHistory } from 'vue-router/auto';
@@ -98,9 +96,7 @@ const router = createRouter({
 });
 ```
 
-<br />
-
-### config
+### Config
 
 ```ts
 // vite.config.ts
@@ -121,8 +117,6 @@ export default defineConfig({
 });
 ```
 
-<br />
-
 ### Type declarations 🦕
 
 If you are a `ts` project, you can also configure the following declaration in
@@ -136,9 +130,7 @@ If you are a `ts` project, you can also configure the following declaration in
 }
 ```
 
-<br />
-
-### note
+### Note
 
 Since the layout system needs to nest a layer of layout routes in the outermost
 layer, it may cause confusion in obtaining the routing table, and auxiliary
@@ -153,9 +145,7 @@ const getRoutes = createGetRoutes(router);
 console.log(getRoutes());
 ```
 
-<br />
-
-## implement 👀
+## Implement 👀
 
 The layout implementation idea comes from [vite-plugin-vue-layouts]
 (https://github.com/JohnCampionJr/vite-plugin-vue-layouts).
@@ -165,8 +155,6 @@ However, the simpler scheme 👉
 and [glob import](https://vitejs.dev/guide/features#glob-import) is used.
 
 The program can do reasonable `HMR` automatically.
-
-<br />
 
 ## License
 
