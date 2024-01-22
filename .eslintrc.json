@@ -1,0 +1,3 @@
+{
+  "extends": ["@sarast", "plugin:prettier/recommended"]
+}
